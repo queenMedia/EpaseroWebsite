@@ -19,6 +19,14 @@
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
+
+    <link rel="stylesheet" href="/styles/notify.css">
+    <script defer src="/scripts/form-secure.js"></script>
+    <script defer src="/scripts/notify.js"></script>
+    <script defer src="/scripts/main.js"></script>
+
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <title>Epasero</title>
   </head>
   <style>
@@ -95,7 +103,7 @@
                         <input type="text" class="form-control" id="form-hero-name" name="name" placeholder="Your Name" />
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="form-hero-name" name="name" placeholder="Last Name" />
+                        <input type="text" class="form-control" id="form-hero-name" name="lastname" placeholder="Last Name" />
                       </div>
                       <div class="form-group">
                         <input type="email" class="form-control" id="form-hero-email" name="email" placeholder="Your Email" />
@@ -103,7 +111,7 @@
                       <div class="form-group">
                         <input type="tel" class="form-control" id="form-hero-phone" name="phone" placeholder="Your Phone" style="color: black" />
                       </div>
-                      <button type="submit" class="btn btn-default btn-framed btn-rounded arrow">Submit</button>
+                      <button onclick="sendForm('form-hero')" type="submit" class="btn btn-default btn-framed btn-rounded arrow">Submit</button>
                     </form>
                   </div>
                   <!--end col-md-5-->
