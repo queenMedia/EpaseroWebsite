@@ -19,14 +19,13 @@
     <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
-
-    <link rel="stylesheet" href="/styles/notify.css">
+    <link rel="stylesheet" href="/styles/notify.css" />
     <script defer src="/scripts/form-secure.js"></script>
     <script defer src="/scripts/notify.js"></script>
     <script defer src="/scripts/main.js"></script>
+    <script defer src="/scripts/modal.js"></script>
 
-
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <title>Epasero</title>
   </head>
   <style>
@@ -43,6 +42,18 @@
       .hero-title h1 {
         padding-top: 20px;
       }
+    }
+    .modal {
+      margin: auto;
+      padding-right: 0;
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+
+    .hight-contrast {
+      filter: invert(1);
     }
   </style>
 
@@ -144,7 +155,7 @@
         <div class="block" id="features" style="background: white">
           <div class="container">
             <div class="title-container">
-              <h2 class="custom-title">Why Dubai real estate?</h2>
+              <h2 class="custom-title">Why to invest in dubai real estate?</h2>
               <p class="custom-description">
                 Dubai has shown to be the smartest investment for those looking for properties that constantly increase their market value, demand for rents, and offer future-proof value. At this
                 moment in time, even the big cities cannot compete.
@@ -175,23 +186,14 @@
                     <td>2X after 10-15 years</td>
                     <td>2X after 12-15 years</td>
                   </tr>
-                  <tr class="dashed-border">
-                    <td style="text-align: start">
-                      <strong>Property Tax.</strong>
-                      <br />
-                      How much you pay to the government when buying a property
-                    </td>
-                    <td>0%</td>
-                    <td>2.5%</td>
-                    <td>1.5%</td>
-                  </tr>
+
                   <tr class="dashed-border">
                     <td style="text-align: start">
                       <strong>Rental Yields.</strong>
                       <br />
                       What % of the property you can charge every month.
                     </td>
-                    <td>5% - 15%</td>
+                    <td>10% to 20%</td>
                     <td>2% - 4%</td>
                     <td>2% - 4%</td>
                   </tr>
@@ -201,19 +203,28 @@
                       <br />
                       What benefits you get from investing in Dubai
                     </td>
-                    <td>UAE Golden Visa</td>
+                    <td>10-year Golden Visa</td>
                     <td>No residency benefits</td>
                     <td>No residency benefits</td>
                   </tr>
                   <tr class="dashed-border">
                     <td style="text-align: start">
-                      <strong>Interest rates.</strong>
+                      <strong>Crypto-Friendly Regulations</strong>
                       <br />
-                      If financed how much % you will pay yearly on top of the property value
+                      How difficult is it to purchase a property using cryptocurrencies.
                     </td>
-                    <td>  3.5%</td>
-                    <td>5.5%</td>
-                    <td>4.5%</td>
+                    <td>
+                      Very easy. Dubai’s government actively supports cryptocurrency transactions for real estate. Agencies like DIFC and VARA offer clear guidelines and benefits for crypto property
+                      purchases.
+                    </td>
+                    <td>
+                      Moderately difficult. While some companies accept crypto, government regulations are stricter. The IRS may tax crypto purchases, and the regulatory framework per state could
+                      transactions.
+                    </td>
+                    <td>
+                      Varies by country. Some governments, like Switzerland, are more crypto-friendly, but others have stricter regulations, so it is up to the buyer to do their due diligence or hire
+                      a legal team for further advice.
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -263,7 +274,7 @@
                     <img src="/assets/img/about/procedures.png" alt="Hard closing procedures." />
                   </div>
                   <h5 class="card-title">Designed for International Buyers.</h5>
-                  <p class="card-text">With us, the process o is seamless, transparent, and straightforward—ensuring a smooth and legal experience every step of the way.</p>
+                  <p class="card-text">With us, the process is seamless, transparent, and straightforward—ensuring a smooth and legal experience every step of the way.</p>
                 </div>
               </div>
             </div>
@@ -287,6 +298,22 @@
             <h2>Properties</h2>
             <div class="row">
               <div class="col-md-4 col-sm-4">
+                <div class="feature has-image" data-scroll-reveal="enter bottom and move 20px after 0.2s">
+                  <div class="image"><img src="assets/img/feature-image-02.jpg" alt="" /></div>
+                  <!--end image-->
+                  <div class="description">
+                    <h3>Azizi Venice</h3>
+                    <p>
+                      Azizi Venice: A prime investment in Dubai Studio City from 585,000 dirhams, offering high rental demand, strong returns, and modern apartments with top features. Ideal for
+                      investors seeking excellent growth potential in a thriving media hub.
+                    </p>
+                  </div>
+                  <!--end description-->
+                </div>
+                <!--end feature-->
+              </div>
+
+              <div class="col-md-4 col-sm-4">
                 <div class="feature has-image" data-scroll-reveal="enter bottom and move 20px">
                   <div class="image"><img src="assets/img/feature-image-01.jpg" alt="" /></div>
                   <!--end image-->
@@ -301,23 +328,7 @@
                 </div>
                 <!--end feature-->
               </div>
-              <!--end col-md-4-->
-              <div class="col-md-4 col-sm-4">
-                <div class="feature has-image" data-scroll-reveal="enter bottom and move 20px after 0.2s">
-                  <div class="image"><img src="assets/img/feature-image-02.jpg" alt="" /></div>
-                  <!--end image-->
-                  <div class="description">
-                    <h3>Azizi Vista</h3>
-                    <p>
-                      Azizi Vista: A prime investment in Dubai Studio City from 585,000 dirhams, offering high rental demand, strong returns, and modern apartments with top features. Ideal for
-                      investors seeking excellent growth potential in a thriving media hub.
-                    </p>
-                  </div>
-                  <!--end description-->
-                </div>
-                <!--end feature-->
-              </div>
-              <!--end col-md-4-->
+
               <div class="col-md-4 col-sm-4">
                 <div class="feature has-image" data-scroll-reveal="enter bottom and move 20px after 0.4s">
                   <div class="image"><img src="assets/img/feature-image-03.jpg" alt="" /></div>
@@ -358,28 +369,11 @@
               <div class="col-md-6 col-sm-6" data-scroll-reveal="enter left and move 20px">
                 <h3>Your Premier Partner for Dubai Real Estate: Expert Guidance and Exceptional Investment Opportunities.</h3>
                 <p>
-                  We are your best choice for Dubai real estate, offering unmatched market expertise and a seamless, stress-free buying experience. Our team provides personalized solutions tailored to
-                  your financial goals, ensuring you make the most of Dubai’s tax-friendly environment. With a proven track record of delivering high-value properties and a strong local presence, we
-                  ensure you get the best investment opportunities available.
+                  We are your best choice when it comes to Dubai real estate, offering unmatched market expertise and a seamless, stress-free buying experience. Our team provides personalized
+                  solutions tailored to your financial goals, ensuring you make the most out of your chosen property. With a proven track record of delivering high-value properties and a strong local
+                  presence, we ensure you get the best investment opportunities available.
                 </p>
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading1">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#feature1" aria-expanded="true" aria-controls="feature1">Maximized Tax Benefits.</a>
-                      </h4>
-                    </div>
-                    <div id="feature1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-                      <div class="panel-body">
-                        <p>
-                          We ensure that all of our properties leverage Dubai’s tax-free environment, offering you the advantage of no property or capital gains taxes. This means more profit for you,
-                          with no added tax burden.
-                        </p>
-                      </div>
-                      <!--/ .panel-body-->
-                    </div>
-                    <!--/ .panel-collapse-->
-                  </div>
                   <!--/ .panel-->
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="heading2">
@@ -523,122 +517,64 @@
         </div>
         <!--end block-->
 
-        <div class="block">
-          <div class="container">
-            <h2>Our Agents</h2>
-            <div class="row">
-              <!-- <div class="col-md-3 col-sm-6"> -->
-              <!-- <div class="person center framed" data-scroll-reveal="enter right and move 20px after 0.2s">
-                                <div class="image">
-                                    <div class="bg-transfer">
-                                        <img src="assets/img/person.jpg" alt="">
-                                    </div>
-                                </div>
-                               
-                                <h3>Jane Doe</h3>
-                                <h4>Company CEO</h4>
-                                <div class="contact-data">
-                                    <figure>+1 (734) 123-4567</figure>
-                                    <a href="#" class="underline">jane.doe@example.com</a>
-                                </div>
-                               
-                                <div class="social">
-                                    <a href="#"><i class="social_facebook_circle"></i></a>
-                                    <a href="#"><i class="social_twitter_circle"></i></a>
-                                    <a href="#"><i class="social_instagram_circle"></i></a>
-                                    <a href="#"><i class="social_skype_circle"></i></a>
-                                </div>
-                               
-                            </div> -->
-              <!--end person-->
-              <!-- </div> -->
-              <!--end col-md-3-->
-              <div class="col-md-4 col-sm-6">
-                <div class="person center framed" data-scroll-reveal="enter right and move 20px">
-                  <div class="image">
-                    <div class="bg-transfer">
-                      <img src="assets/img/person-02.jpg" alt="" />
-                    </div>
-                  </div>
-                  <!--end image-->
-                  <h3>John Brown</h3>
-                  <h4>Public Relations</h4>
-                  <div class="contact-data">
-                    <figure>+1 (734) 123-4567</figure>
-                    <a href="#" class="underline">john.brown@example.com</a>
-                  </div>
-                  <!--end contact-data-->
-                  <!-- <div class="social">
-                                    <a href="#"><i class="social_facebook_circle"></i></a>
-                                    <a href="#"><i class="social_twitter_circle"></i></a>
-                                    <a href="#"><i class="social_instagram_circle"></i></a>
-                                    <a href="#"><i class="social_skype_circle"></i></a>
-                                </div> -->
-                  <!--end social-->
-                </div>
-                <!--end person-->
-              </div>
-              <!--end col-md-3-->
-              <div class="col-md-4 col-sm-6">
-                <div class="person center framed" data-scroll-reveal="enter left and move 20px">
-                  <div class="image">
-                    <div class="bg-transfer">
-                      <img src="assets/img/person-03.jpg" alt="" />
-                    </div>
-                  </div>
-                  <!--end image-->
-                  <h3>Peter Grains</h3>
-                  <h4>Marketing Specialist</h4>
-                  <div class="contact-data">
-                    <figure>+1 (734) 123-4567</figure>
-                    <a href="#" class="underline">peter.grains@example.com</a>
-                  </div>
-                  <!--end contact-data-->
-                  <!-- <div class="social">
-                                    <a href="#"><i class="social_facebook_circle"></i></a>
-                                    <a href="#"><i class="social_twitter_circle"></i></a>
-                                    <a href="#"><i class="social_instagram_circle"></i></a>
-                                    <a href="#"><i class="social_skype_circle"></i></a>
-                                </div> -->
-                  <!--end social-->
-                </div>
-                <!--end person-->
-              </div>
-              <!--end col-md-3-->
-              <div class="col-md-4 col-sm-6">
-                <div class="person center framed" data-scroll-reveal="enter left and move 20px after 0.2s">
-                  <div class="image">
-                    <div class="bg-transfer">
-                      <img src="assets/img/person-04.jpg" alt="" />
-                    </div>
-                  </div>
-                  <!--end image-->
-                  <h3>Danny Stevens</h3>
-                  <h4>Support</h4>
-                  <div class="contact-data">
-                    <figure>+1 (734) 123-4567</figure>
-                    <a href="#" class="underline">danny.stevens@example.com</a>
-                  </div>
-                  <!--end contact-data-->
-                  <!-- <div class="social">
-                                    <a href="#"><i class="social_facebook_circle"></i></a>
-                                    <a href="#"><i class="social_twitter_circle"></i></a>
-                                    <a href="#"><i class="social_instagram_circle"></i></a>
-                                    <a href="#"><i class="social_skype_circle"></i></a>
-                                </div> -->
-                  <!--end social-->
-                </div>
-                <!--end person-->
-              </div>
-              <!--end col-md-3-->
-            </div>
-            <!--end row-->
-          </div>
-          <!--end container-->
-        </div>
-
         <div class="block" style="scroll-margin-top: 50px" id="properties">
           <div class="container">
+            <div class="detail right-align" data-scroll-reveal="enter right and move 20px">
+              <div class="title">
+                <h3 class="framed">Azizi Venice</h3>
+              </div>
+              <!--end title-->
+              <div class="row">
+                <div class="col-md-5 col-sm-5">
+                  <div class="description">
+                    <h4>Azizi Venice</h4>
+                    <p>
+                      Offers a prime investment opportunity starting from 585,000 dirhams, ideal for professionals, young families, and creative individuals. Located in the heart of Dubai Studio City,
+                      a fast-growing hub for film and television production, Azizi Venice features modern studio, 1, and 2-bedroom apartments designed for a balanced lifestyle, surrounded by greenery
+                      and leisure facilities.
+                    </p>
+                    <h4>Key Features & Amenities:</h4>
+                    <p>
+                      • Swimming pools for adults and children
+                      <br />
+                      • BBQ areas and social spaces
+                      <br />
+                      • Exclusive yoga retreat
+                      <br />
+                      • Landscaped outdoor spaces for relaxation
+                      <br />
+                      • Children’s play areas
+                      <br />
+                      • With excellent connectivity to Al Khail Road and Mohammed Bin Zayed Road, and proximity to key locations like Dubai Sports City, Motor City, and the Dubai Autodrome, Azizi
+                      Venice provides both convenience and comfort. It's just minutes away from major attractions, shopping, dining, and entertainment venues like Dubai Miracle Garden and IMG Parks &
+                      Resorts.
+                    </p>
+                  </div>
+                  <!--end description-->
+                </div>
+                <!--end col-md-5-->
+                <div class="col-md-7 col-sm-7">
+                  <div class="gallery">
+                    <div class="owl-carousel one-item-carousel" data-owl-items="1" data-owl-margin="0" data-owl-nav="0" data-owl-dots="1">
+                      <img src="assets/img/hotels/hotel2-1.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel2-2.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel2-3.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel2-4.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel2-5.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel2-6.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="button-container">
+                    <button class="custom-button" onclick="scrollToTop()" style="margin-bottom: 30px">I'm interested</button>
+                  </div>
+                  <!--end gallery-->
+                </div>
+                <!--end col-md-7-->
+              </div>
+              <!--end row-->
+            </div>
+
             <div class="detail left-align" data-scroll-reveal="enter left and move 20px">
               <div class="title">
                 <h3 class="framed">Beach walk by IMTIAZ</h3>
@@ -658,7 +594,7 @@
                   </div>
 
                   <div class="button-container">
-                    <button class="custom-button" onclick="scrollToTop()">I'm interested</button>
+                    <button class="custom-button" onclick="scrollToTop()" style="margin-bottom: 30px">I'm interested</button>
                   </div>
                   <!--end gallery-->
                 </div>
@@ -697,87 +633,13 @@
               </div>
               <!--end row-->
             </div>
-            <!--end detail-->
-            <div class="detail right-align" data-scroll-reveal="enter right and move 20px">
-              <div class="title">
-                <h3 class="framed">Azizi Vista</h3>
-              </div>
-              <!--end title-->
-              <div class="row">
-                <div class="col-md-5 col-sm-5">
-                  <div class="description">
-                    <h4>Azizi Vista</h4>
-                    <p>
-                      Offers a prime investment opportunity starting from 585,000 dirhams, ideal for professionals, young families, and creative individuals. Located in the heart of Dubai Studio City,
-                      a fast-growing hub for film and television production, Azizi Vista features modern studio, 1, and 2-bedroom apartments designed for a balanced lifestyle, surrounded by greenery
-                      and leisure facilities.
-                    </p>
-                    <h4>Key Features & Amenities:</h4>
-                    <p>
-                      • Swimming pools for adults and children
-                      <br />
-                      • BBQ areas and social spaces
-                      <br />
-                      • Exclusive yoga retreat
-                      <br />
-                      • Landscaped outdoor spaces for relaxation
-                      <br />
-                      • Children’s play areas
-                      <br />
-                      • With excellent connectivity to Al Khail Road and Mohammed Bin Zayed Road, and proximity to key locations like Dubai Sports City, Motor City, and the Dubai Autodrome, Azizi
-                      Vista provides both convenience and comfort. It's just minutes away from major attractions, shopping, dining, and entertainment venues like Dubai Miracle Garden and IMG Parks &
-                      Resorts.
-                    </p>
-                  </div>
-                  <!--end description-->
-                </div>
-                <!--end col-md-5-->
-                <div class="col-md-7 col-sm-7">
-                  <div class="gallery">
-                    <div class="owl-carousel one-item-carousel" data-owl-items="1" data-owl-margin="0" data-owl-nav="0" data-owl-dots="1">
-                      <img src="assets/img/hotels/hotel2-1.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel2-2.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel2-3.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel2-4.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel2-5.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel2-6.jpg" alt="" />
-                    </div>
-                  </div>
 
-                  <div class="button-container">
-                    <button class="custom-button" onclick="scrollToTop()">I'm interested</button>
-                  </div>
-                  <!--end gallery-->
-                </div>
-                <!--end col-md-7-->
-              </div>
-              <!--end row-->
-            </div>
-            <!--end detail-->
-            <div class="detail left-align" data-scroll-reveal="enter left and move 20px">
+            <div class="detail right-align" data-scroll-reveal="enter right and move 20px">
               <div class="title">
                 <h3 class="framed">Binghatti Hills</h3>
               </div>
               <!--end title-->
               <div class="row">
-                <div class="col-md-7 col-sm-7">
-                  <div class="gallery">
-                    <div class="owl-carousel one-item-carousel" data-owl-items="1" data-owl-margin="0" data-owl-nav="0" data-owl-dots="1">
-                      <img src="assets/img/hotels/hotel3-1.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel3-2.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel3-3.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel3-4.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel3-5.jpg" alt="" />
-                      <img src="assets/img/hotels/hotel3-6.jpg" alt="" />
-                    </div>
-                  </div>
-
-                  <div class="button-container">
-                    <button class="custom-button" onclick="scrollToTop()">I'm interested</button>
-                  </div>
-                  <!--end gallery-->
-                </div>
-                <!--end col-md-7-->
                 <div class="col-md-5 col-sm-5">
                   <div class="description">
                     <h4>Binghatti Hills</h4>
@@ -812,18 +674,32 @@
                   <!--end description-->
                 </div>
                 <!--end col-md-5-->
+                <div class="col-md-7 col-sm-7">
+                  <div class="gallery">
+                    <div class="owl-carousel one-item-carousel" data-owl-items="1" data-owl-margin="0" data-owl-nav="0" data-owl-dots="1">
+                      <img src="assets/img/hotels/hotel3-1.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel3-2.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel3-3.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel3-4.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel3-5.jpg" alt="" />
+                      <img src="assets/img/hotels/hotel3-6.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="button-container">
+                    <button class="custom-button" onclick="scrollToTop()" style="margin-bottom: 30px">I'm interested</button>
+                  </div>
+                  <!--end gallery-->
+                </div>
+                <!--end col-md-7-->
               </div>
               <!--end row-->
             </div>
+
             <!--end detail-->
           </div>
           <!--end container-->
         </div>
-        <!--end block-->
-
-        <!--end block-->
-
-        <!--end block-->
 
         <div class="block" style="scroll-margin-top: 50px" id="contact">
           <div class="container">
@@ -831,8 +707,6 @@
             <div class="contact map">
               <div class="row">
                 <div class="col-md-6 col-sm-6">
-                  <!-- <h3>Map</h3>
-                                <div class="map" id="map"></div> -->
                   <div class="row">
                     <div class="col-md-6 col-sm-6">
                       <h3>Address</h3>
@@ -847,6 +721,7 @@
                         <a href="#itay@epasero.com">itay@epasero.com</a>
                       </address>
                     </div>
+
                     <div class="col-md-6 col-sm-6">
                       <h3>Social</h3>
                       <div class="social">
@@ -862,48 +737,16 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="col-md-6 col-sm-6">
-                                <h3>Contact form</h3>
-                                <form id="form-contact" method="post" class="clearfix inputs-underline">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="form-contact-name"
-                                                    name="name" placeholder="Your Name" required>
-                                            </div>
-                                          
-                                        </div>
-                                        
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" id="form-contact-email"
-                                                    name="email" placeholder="Your Email" required>
-                                            </div>
-                                           
-                                        </div>
-                                       
-                                    </div>
-                                  
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="form-contact-message" rows="8"
-                                                    name="message" placeholder="Your Message" required></textarea>
-                                            </div>
-                                           
-                                        </div>
-                                       
-                                    </div>
-                                   
-                                    <div class="form-group clearfix">
-                                        <button type="submit" class="btn pull-right btn-primary btn-rounded"
-                                            id="form-contact-submit">Send a Message</button>
-                                    </div>
-                                   
-                                    <div id="form-contact-status"></div>
-                                </form>
-                               
-                            </div> -->
+
+                <div class="col-md-6 col-sm-6">
+                  <h3>Legals</h3>
+                  <div style="display: flex; flex-direction: column; gap: 10px">
+                    <a onclick="clickModal('terms-modal')" style="margin-left: 0; padding-left: 0">Terms and Conditions</a>
+                    <a onclick="clickModal('privacy-modal')" style="margin-left: 0; padding-left: 0">Privacy Policy</a>
+                    <a onclick="clickModal('accessibility-modal')" style="margin-left: 0; padding-left: 0">Accessibility Policy</a>
+                    <a onclick="clickModal('cookies-policy-modal')" style="margin-left: 0; padding-left: 0">Cookies Policy</a>
+                  </div>
+                </div>
               </div>
             </div>
             <!--end contact map-->
@@ -923,103 +766,73 @@
     </div>
     <!--end page-wrapper-->
 
-    <div class="modal fade apartment-selector" id="floor-modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon_close"></i></button>
-        <div class="modal-content">
+    <!-- ? Modals -->
+    <!-- ? Terms and Conditions modal -->
+    <div class="modal fade apartment-selector" id="terms-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 95vw; margin: auto">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="icon_close"></i>
+        </button>
+        <div class="modal-content" style="overflow-x: hidden">
           <div class="modal-header">
             <div class="title">
-              <h4>Building A</h4>
-              <h3>Floor 3</h3>
-              <h1 class="modal-title">Apartment 01</h1>
-              <h2>$69,000</h2>
+              <h4>Cookies Policy</h4>
             </div>
           </div>
           <!--end modal-header-->
-          <div class="modal-body">
-            <div class="left">
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#modal-floor-plan-1" aria-controls="modal-floor-plan-1" role="tab" data-toggle="tab">Floor plan</a></li>
-                <li role="presentation"><a href="#modal-gallery-1" aria-controls="modal-gallery-1" role="tab" data-toggle="tab">Gallery</a></li>
-              </ul>
-              <!--end nav-tabs-->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="modal-floor-plan-1">
-                  <a href="assets/img/floor-plan.jpg" class="image-popup"><img src="assets/img/floor-plan.jpg" alt="" /></a>
-                  <div class="note">Click to zoom</div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="modal-gallery-1">
-                  <div class="gallery">
-                    <div class="one-item-carousel" data-owl-items="1" data-owl-margin="0" data-owl-nav="0" data-owl-dots="1">
-                      <img src="assets/img/gallery-01.jpg" alt="" />
-                      <img src="assets/img/image-video.jpg" alt="" />
-                      <img src="assets/img/gallery-02.jpg" alt="" />
-                    </div>
-                  </div>
-                  <!--end gallery-->
-                  <a href="http://vimeo.com/24506451" class="video-tour video-popup">
-                    <i class="play-icon arrow_triangle-right"></i>
-                    Click to take a video tour
-                  </a>
-                </div>
-              </div>
-              <!--end tab-content-->
-            </div>
-            <!--end left-->
-            <div class="right">
-              <h3>Parameters</h3>
-              <dl>
-                <dt>Kitchen</dt>
-                <dd>
-                  24m
-                  <sup>2</sup>
-                </dd>
-                <dt>Master bedroom</dt>
-                <dd>
-                  58m
-                  <sup>2</sup>
-                </dd>
-                <dt>Balcony</dt>
-                <dd>
-                  67m
-                  <sup>2</sup>
-                </dd>
-                <dt>Toilet</dt>
-                <dd>
-                  20m
-                  <sup>2</sup>
-                </dd>
-                <dt>Living room</dt>
-                <dd>
-                  77m
-                  <sup>2</sup>
-                </dd>
-                <dt>Passage</dt>
-                <dd>
-                  48m
-                  <sup>2</sup>
-                </dd>
-              </dl>
-              <h3>Description</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula mauris at finibus efficitur. Nulla facilisi. Proin sodales nibh id consequat mattis. Phasellus eu consequat
-                nunc.
-              </p>
-              <hr />
-              <figure>
-                <a href="#" class="icon">
-                  <i class="fa fa-file-pdf-o"></i>
-                  Download PDF
-                </a>
-              </figure>
-              <figure>
-                <a href="#" class="icon">
-                  <i class="fa fa-file-image-o"></i>
-                  Download Brochure
-                </a>
-              </figure>
-            </div>
-            <!--end right-->
+          <div class="modal-body" style="max-height: 80vh; overflow-y: auto; padding: 0 30px">
+            <!-- Aquí el contenido ocupa todo el modal sin pestañas -->
+            <h5>1. Opening Statement</h5>
+            <p>
+              In order to enhance the user experience and provide pertinent content, this website implements cookies. Cookies are tiny pieces of information that are stored on your device and assist
+              in the memory of specific interactions you have had with our site. By continuing to navigate, you consent to the use of cookies in accordance with this policy.
+            </p>
+
+            <h5>2. What are cookies?</h5>
+            <p>
+              In order to enhance your online experience, websites install small text files known as cookies on your device. Although they do not contain personally identifiable information, they are
+              essential for the website's efficient operation and offer valuable insights to improve user experience and performance.
+            </p>
+
+            <h5>3. The types of cookies that we employ</h5>
+            <p>Our website employs the subsequent categories of cookies:</p>
+            <ul>
+              <li>
+                <strong>Essential cookies:</strong>
+                These cookies are necessary for the website to function properly, including the completion of forms and accessing secure areas.
+              </li>
+              <li>
+                <strong>Performance cookies:</strong>
+                These cookies assist us in comprehending the website's visitors' behavior, identifying the most popular pages, and enhancing the user experience by enhancing content.
+              </li>
+              <li>
+                <strong>Functionality cookies:</strong>
+                These cookies are designed to provide a more personalized experience by storing your preferences, such as your language or region.
+              </li>
+              <li>
+                <strong>Advertising cookies:</strong>
+                These cookies are employed to present users with pertinent advertisements. They are supplied by third-party platforms, such as Google AdSense, and may monitor your perusing activity
+                across various websites in order to present you with more pertinent advertisements.
+              </li>
+            </ul>
+
+            <h5>4. Cookies from third-party sources</h5>
+            <p>
+              In order to enhance the functionality of our website and analyze its traffic, we may permit third-party services such as Google Analytics to install cookies on your device. We have no
+              control over these cookies, so we recommend reviewing the cookie policies of these services.
+            </p>
+
+            <h5>5. Cookie management</h5>
+            <p>
+              You have the option to either approve or reject cookies. The settings of the majority of browsers enable users to regulate cookies. Some sections of our website may not function
+              effectively if you choose to block cookies. We recommend that you refer to the documentation of your browser for additional details regarding cookie management.
+            </p>
+
+            <h5>6. Updates to the cookie policy</h5>
+            <p>We maintain the right to revise this cookie policy at any time. We suggest that you visit this page frequently to remain informed about any updates.</p>
+
+            <h5>Contact Information</h5>
+            <p>Please feel free to reach out to us at Fahad@emdmarketing.com if you have any inquiries regarding our cookie policy.</p>
           </div>
           <!--end modal-body-->
         </div>
@@ -1027,9 +840,229 @@
       </div>
       <!--end modal-dialog-->
     </div>
-    <!--end modal-->
 
-    <!--end outer-wrapper-->
+    <!-- ? Privacy Policy modal -->
+    <div class="modal fade apartment-selector" id="privacy-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 95vw; margin: auto">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="icon_close"></i>
+        </button>
+        <div class="modal-content" style="overflow-x: hidden">
+          <div class="modal-header">
+            <div class="title">
+              <h4>Privacy Policy</h4>
+            </div>
+          </div>
+          <!--end modal-header-->
+          <div class="modal-body" style="max-height: 80vh; overflow-y: auto; padding: 0 30px">
+            <!-- Aquí el contenido ocupa todo el modal sin pestañas -->
+            <h5>1. Opening Statement</h5>
+            <p>
+              This Privacy Policy delineates the methods by which we collect, use, and safeguard your personal information when you visit our website and submit your information. By submitting your
+              information, you consent to the practices outlined in this policy.
+            </p>
+
+            <h5>2. Data We Gather</h5>
+            <p>The following personal data is collected through our forms:</p>
+            <ul>
+              <li>Name</li>
+              <li>Last Name</li>
+              <li>Phone Number</li>
+              <li>Email Address</li>
+            </ul>
+
+            <h5>3. Purpose of Data Collection</h5>
+            <p>The information we gather is employed for the following purposes:</p>
+            <ul>
+              <li>To communicate with you about the properties or services in which you have expressed interest through our call center.</li>
+              <li>To customize and execute advertisements that are influenced by your interactions with our website.</li>
+              <li>In order to enhance our advertising strategies and user experience.</li>
+            </ul>
+
+            <h5>4. The Methods by Which We Utilize Your Data</h5>
+            <p>
+              Communication between you and our sales or support team is predominantly facilitated by the use of your data in our call center. This may entail subsequent emails or phone calls to
+              furnish you with pertinent information regarding our property services and offerings.
+            </p>
+
+            <h5>5. Data Exchange</h5>
+            <p>Your personal information is not sold, rented, or traded to third parties. Instead, we may disclose your information to:</p>
+            <ul>
+              <li>We will utilize our advertising partners to deploy targeted advertisements.</li>
+              <li>Our internal call center personnel for follow-up communication.</li>
+              <li>
+                Service providers who aid in the management and operation of our website and services, such as hosting providers and CRM platforms. These entities are obligated to maintain the
+                confidentiality of your information and to utilize it exclusively for the aforementioned purposes.
+              </li>
+            </ul>
+
+            <h5>6. Security of Data</h5>
+            <p>
+              We are dedicated to safeguarding your personal information. In order to guarantee its security and prevent unauthorized access or disclosure, we implement suitable technical and
+              organizational measures.
+            </p>
+
+            <h5>7. Your Rights</h5>
+            <p>You are entitled to:</p>
+            <ul>
+              <li>You have the ability to access, modify, or eliminate your personal data at any given moment.</li>
+              <li>Withdraw your consent to the use of your data for direct marketing purposes.</li>
+              <li>Please request that we cease contacting you through our call center.</li>
+            </ul>
+            <p>To exercise any of these rights, kindly reach out to us at Fahad@emdmarketing.com.</p>
+
+            <h5>8. Data Retention</h5>
+            <p>
+              We only retain your personal data for the duration necessary to fulfill the objectives outlined in this policy or as mandated by law. Your data will be securely deleted once it is no
+              longer required.
+            </p>
+
+            <h5>9. Modifications to This Privacy Policy</h5>
+            <p>Please be advised that we may modify this Privacy Policy at any time. This page will be updated as necessary, and we recommend that you revisit it frequently.</p>
+
+            <h5>10. Contact Us</h5>
+            <p>Please feel free to reach out to us at Fahad@emdmarketing.com if you have any queries or concerns regarding our Privacy Policy or the protection of your personal information.</p>
+          </div>
+          <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialog-->
+    </div>
+
+    <!-- ? Accessibility Policy modal -->
+    <div class="modal fade apartment-selector" id="accessibility-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 95vw; margin: auto">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="icon_close"></i>
+        </button>
+        <div class="modal-content" style="overflow-x: hidden">
+          <div class="modal-header">
+            <div class="title">
+              <h4>Accessibility Policy</h4>
+            </div>
+          </div>
+          <!--end modal-header-->
+          <div class="modal-body" style="max-height: 80vh; overflow-y: auto; padding: 0 30px">
+            <!-- Aquí el contenido ocupa todo el modal sin pestañas -->
+            <p>
+              We are committed to ensuring that our platforms are accessible to all users, irrespective of their capabilities, on our website. To this end, we have implemented the Accessibly tool to
+              simplify the process of granting access to individuals with varying navigational requirements.
+            </p>
+
+            <h5>1. Utilization of Accessibility</h5>
+            <p>Our Accessibly tool offers a variety of accessibility features that enable users to customize their browsing experience. These functions encompass:</p>
+            <ul>
+              <li>Screen readers</li>
+              <li>Increase in text volume</li>
+              <li>Color contrast</li>
+              <li>Keyboard navigation</li>
+              <li>Link submission</li>
+              <li>Low-brightness mode, among others</li>
+            </ul>
+            <p>These options are intended to enhance the accessibility and usability of the content on our website.</p>
+
+            <h5>2. Continuous Improvements</h5>
+            <p>
+              We are dedicated to continuously enhancing the accessibility of our website. If you have any suggestions or encounter any difficulties accessing any portion of our website, please do not
+              hesitate to contact us at Fahad@emdmarketing.com.
+            </p>
+
+            <h5>3. Adherence to Standards</h5>
+            <p>
+              We strive to adhere to the established accessibility standards and the industry's best practices. With Accessibly, we guarantee that our website adheres to the fundamental principles of
+              accessibility in order to provide a more inclusive experience for all.
+            </p>
+
+            <h5>4. Restrictions</h5>
+            <p>
+              While we strive to provide an accessible website, there may be some limitations. We welcome comments in order to enhance the user experience and address any accessibility issues that may
+              arise.
+            </p>
+          </div>
+          <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialog-->
+    </div>
+
+    <!-- ? Cookies Policy modal -->
+    <div class="modal fade apartment-selector" id="cookies-policy-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 95vw; margin: auto">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="icon_close"></i>
+        </button>
+        <div class="modal-content" style="overflow-x: hidden">
+          <div class="modal-header">
+            <div class="title">
+              <h4>Cookies Policy</h4>
+            </div>
+          </div>
+          <!--end modal-header-->
+          <div class="modal-body" style="max-height: 80vh; overflow-y: auto; padding: 0 30px">
+            <h5>1. Opening Statement</h5>
+            <p>
+              In order to enhance the user experience and provide pertinent content, this website implements cookies. Cookies are tiny pieces of information that are stored on your device and assist
+              in the memory of specific interactions you have had with our site. By continuing to navigate, you consent to the use of cookies in accordance with this policy.
+            </p>
+
+            <h5>2. What are cookies?</h5>
+            <p>
+              In order to enhance your online experience, websites install small text files known as cookies on your device. Although they do not contain personally identifiable information, they are
+              essential for the website's efficient operation and offer valuable insights to improve user experience and performance.
+            </p>
+
+            <h5>3. The types of cookies that we employ</h5>
+            <p>Our website employs the subsequent categories of cookies:</p>
+            <ul>
+              <li>
+                <strong>Essential cookies:</strong>
+                These cookies are necessary for the website to function properly, including the completion of forms and accessing secure areas.
+              </li>
+              <li>
+                <strong>Performance cookies:</strong>
+                These cookies assist us in comprehending the website's visitors' behavior, identifying the most popular pages, and enhancing the user experience by enhancing content.
+              </li>
+              <li>
+                <strong>Functionality cookies:</strong>
+                These cookies are designed to provide a more personalized experience by storing your preferences, such as your language or region.
+              </li>
+              <li>
+                <strong>Advertising cookies:</strong>
+                These cookies are employed to present users with pertinent advertisements. They are supplied by third-party platforms, such as Google AdSense, and may monitor your perusing activity
+                across various websites in order to present you with more pertinent advertisements.
+              </li>
+            </ul>
+
+            <h5>4. Cookies from third-party sources</h5>
+            <p>
+              In order to enhance the functionality of our website and analyze its traffic, we may permit third-party services such as Google Analytics to install cookies on your device. We have no
+              control over these cookies, so we recommend reviewing the cookie policies of these services.
+            </p>
+
+            <h5>5. Cookie management</h5>
+            <p>
+              You have the option to either approve or reject cookies. The settings of the majority of browsers enable users to regulate cookies. Some sections of our website may not function
+              effectively if you choose to block cookies. We recommend that you refer to the documentation of your browser for additional details regarding cookie management.
+            </p>
+
+            <h5>6. Updates to the cookie policy</h5>
+            <p>We maintain the right to revise this cookie policy at any time. We suggest that you visit this page frequently to remain informed about any updates.</p>
+
+            <p>
+              <strong>Contact Information</strong>
+              <br />
+              Please feel free to reach out to us at Fahad@emdmarketing.com if you have any inquiries regarding our cookie policy.
+            </p>
+          </div>
+          <!--end modal-body-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialog-->
+    </div>
+
     <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
@@ -1062,8 +1095,10 @@
             .then(json => success(json.country))
             .catch(() => success('gb'));
         },
-        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js', // for formatting/validation etc.
+        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
       });
     </script>
+
+    <script src="https://dash.accessiblyapp.com/widget/ad6ec1a9-853a-4cc5-b22d-8535e5314fed/autoload.js"></script>
   </body>
 </html>
