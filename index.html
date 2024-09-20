@@ -1259,8 +1259,8 @@
 
   <style>
     .whatsAppGlobalBtn {
-      height: 60px;
-      width: 60px;
+      height: 55px;
+      width: 55px;
       border-radius: 30px;
       background-color: green;
       display: none;
@@ -1304,6 +1304,7 @@
 
       #accessiblyAppWidgetButton {
         right: 15px;
+        bottom: 5px;
       }
 
       body #accessiblyAppWidgetButton.accessibly-app-widget-button-container .accessibly-app-icon-medium {
@@ -1346,6 +1347,7 @@
       forms.forEach((form) => {
         form.addEventListener("submit", function (event) {
           event.preventDefault();
+          event.stopPropagation()
           const firstName = form.querySelector(drmGsNameSelector);
           const lastName = form.querySelector(drmGsLastNameSelector);
           const email = form.querySelector(drmGsEmailSelector);
