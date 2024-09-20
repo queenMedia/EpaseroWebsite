@@ -1193,10 +1193,16 @@
 
 
 
-  <a href="https://api.whatsapp.com/send?phone=971507384635" target="_blank" id="globalWhatsappBtn"
+  <a id="whatsapplink" href="https://api.whatsapp.com/send?phone=971507384635" target="_blank" id="globalWhatsappBtn"
     class="whatsAppGlobalBtn" style="display: flex; z-index: 99999999;">
     <img src="https://dp-site-assets.s3.eu-west-1.amazonaws.com/uploads/revamp/images/Whatsapp+(1).svg" alt="">
   </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("whatsapplink").setAttribute('href', `https://api.whatsapp.com/send?phone=971507384635&text=${encodeURIComponent(location.href)} \n Hello, I would like to know more about the project.`)
+    })
+  </script>
 
   <style>
     .whatsAppGlobalBtn {
