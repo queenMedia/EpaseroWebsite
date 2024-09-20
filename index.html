@@ -1435,6 +1435,10 @@
             .then(() => {
               btn.innerHTML = "✓";
               btn.parentElement?.classList.add("successed");
+              //notify.success(message, 2000);
+              setTimeout(() => {
+                window.location.href = 'thank-you.html';
+              }, 1000);
             })
             .finally(() => {
               setTimeout(() => {
@@ -1453,9 +1457,8 @@
                 if (checkin) checkin.value = null;
                 if (checkout) checkout.value = null;
               }, 1500);
-              setTimeout(() => {
-                btn.parentElement?.classList.remove("successed");
-              }, 3500);
+
+
             });
         });
       });
